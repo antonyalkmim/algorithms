@@ -45,4 +45,5 @@ template <class DataType> class Node
 			return x;
 		}
 };
-#endif
+
+#endif //NODE_H

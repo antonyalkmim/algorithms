@@ -86,7 +86,8 @@ template <class DataType> class Queue
 		}
 
 };
-#endif
+
+#endif //QUEUE_H
 
 	
 	

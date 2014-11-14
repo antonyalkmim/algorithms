@@ -7,7 +7,7 @@
 
 #include "Stack.h"
 #include "Queue.h"
-
+#include "List.h"
 
 class Dado{
 	public:
@@ -17,27 +17,22 @@ class Dado{
 int main()
 {
 	
-	Queue<Dado> myqueue;
-	Dado a,b,c;
+	List<Dado> lista;
+	Dado a,b,c,d,e;
 	
 	a.id = 1;
-	b.id = 3;
-	c.id = 5;
+	b.id = 2;
+	c.id = 3; 
+	d.id = 4;
 	
-	myqueue.Enqueue(a); 
-	myqueue.Enqueue(b); 
-	myqueue.Enqueue(c); 
+	lista.Insert(a);
+	lista.Insert(b);
+	lista.Insert(c);
+	lista.Insert(d);
 	
-	printf("%i\n",myqueue.size());  //3
+	lista.Delete(1,&e);
 
-	myqueue.Dequeue(&c); 
-	printf("%i\n",myqueue.size());  //2
-	
-	myqueue.Dequeue(&c); 
-	printf("%i\n",myqueue.size());  //1
-	
-	myqueue.Dequeue(&c); 
-	printf("%i\n",myqueue.size());  //0
+	printf("%i\n", lista.size()); //3
 	
 	
 

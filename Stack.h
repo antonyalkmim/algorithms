@@ -86,7 +86,7 @@ template <class DataType> class Stack
 		
 };
 
-#endif
+#endif //STACK_H
 
 
 
