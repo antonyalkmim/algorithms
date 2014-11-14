@@ -85,6 +85,15 @@ template <class DataType> class Queue
 			return i;
 		}
 
+		/*
+		 * isEmpty
+		 * Returns true if Queue is empty else false
+		*/
+		bool isEmpty()
+		{
+			return (head == NULL);
+		}
+
 };
 
 #endif //QUEUE_H
