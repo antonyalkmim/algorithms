@@ -62,7 +62,8 @@ template <class DataType> class Stack
 		 * isEmpty
 		 * Returns true if Stack is empty else false
 		*/
-		bool isEmpty(){
+		bool isEmpty()
+		{
 			return (top == NULL);
 		}
 
@@ -70,8 +71,8 @@ template <class DataType> class Stack
 		 * size
 		 * Returns a number of nodes in the Stack
 		*/
-		int size(){
-
+		int size()
+		{
 			Node<DataType> *tmp = top;
 			int i=0;
 

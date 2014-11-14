@@ -28,8 +28,8 @@ template <class DataType> class Queue
 		 * DataType A: Data to insert in a Queue
 		 * Insert data into a Queue tail
 		*/
-		bool Enqueue(DataType A){
-			
+		bool Enqueue(DataType A)
+		{
 			Node<DataType> *P = Node<DataType>::createNode(A); //create a new node to insert in the queue
 			if(!P)
 				return false;//return false case haven't memory
@@ -53,8 +53,8 @@ template <class DataType> class Queue
 		 * Remove the head(first) Node in Queue and return data by param *A.
 		 * Returns true if Queue is not empty else false
 		*/
-		bool Dequeue(DataType *A){
-			
+		bool Dequeue(DataType *A)
+		{
 			if(this->head == NULL)
 				return false; //case queue is empty
 			
@@ -69,8 +69,8 @@ template <class DataType> class Queue
 		 * int size()
 		 * Returns the number os elements in the queue
 		*/
-		int size(){
-			
+		int size()
+		{
 			int i=0;
 
 			if(this->head == NULL)
