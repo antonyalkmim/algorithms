@@ -156,8 +156,41 @@ class AVL{
             }
         }
 
+        /**
+        * Limpa todos os filhos de Raiz
+        */
+        static void Clear(TreeNode<myType> *Raiz){
+            if(Raiz)
+                iclear(&Raiz);
+        }
+
+        /**
+        * Remove todos os Nodes da arvore
+        */
+        void Clear(){
+            if(this->Root)
+                iclear(&this->Root);
+        }
 
     protected:
+        /**
+        * Remove all the childrens from Root
+        */
+        void iclear(TreeNode<myType> **Raiz){
+
+            if((*Raiz)){
+                TreeNode<myType> *P;
+
+                iclear(&(*Raiz)->Left);
+                iclear(&(*Raiz)->Right);
+
+                P = *Raiz;
+                *Raiz = NULL;
+                TreeNode<myType>::desmontaNo(P);
+            }
+        }
+
+
         /*
          *AVL::Insert(Dado x, TreeNode **Raiz);
          *Dado x : Objeto do tipo dado que armazenaremos na arvore

@@ -45,8 +45,10 @@ int main(){
 * `void Delete(int position, DataType* item);` Delete item and re-balance th tree
 * `bool Search(int key, DataType *item, TreeNode<DataType> **Root);` Searchthe node by key and put it in `*item`
 * `int Height(TreeNode<DataType> *Root);` Return the tree height
-* `TreeNode<DataType> *getRoot();` Returns the Tree Root
-* `static TreeNode<DataType> *Min(TreeNode<DataType> *Root);` Return lass key in Tree
+* `TreeNode<DataType>* getRoot();` Returns the Tree Root
+* `void Clear();` Clear all the Tree Nodes
+* `static void Clear(TreeNode<DataType> *Root);` Clear all childrens from Root
+* `static TreeNode<DataType> *Min(TreeNode<DataType> *Root);` Return less key in Tree
 * `static TreeNode<DataType> *Max(TreeNode<DataType> *Root);` Return mayor key in Tree
 * `static void InOrder(TreeNode<DataType> *Root);` Prints the nodes InOrder format
 * `static void PreOrder(TreeNode<DataType> *Root);` Prints the nodes PreOrder format
